@@ -1,0 +1,5 @@
+path: C:\projetos\aula-09-foices\notebooks\sickle-1
+train: train/images
+val: train/images
+nc: 1
+names: ['sickle']

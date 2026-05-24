@@ -1,0 +1,29 @@
+[project]
+name = "aula-09-foices"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gustavo Scandelae de Flores",email = "gustavo.scandelae@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ultralytics (>=8.4.53,<9.0.0)",
+    "numpy (>=2.4.6,<3.0.0)",
+    "opencv-python (>=4.13.0.92,<5.0.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "roboflow (>=1.3.8,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "aula_09_foices", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)"
+]
